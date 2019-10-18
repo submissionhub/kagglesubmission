@@ -8,8 +8,8 @@ import data_fn as dt
 
 
 
-DATA = pand.read_csv('College\Projects\ML_Kaggle\data_train.csv',sep=',').to_numpy()
-TEST = pand.read_csv('College\Projects\ML_Kaggle\data_test.csv',sep=',').to_numpy()
+DATA = pand.read_csv('data_train.csv',sep=',').to_numpy()
+
  
 
 (m,n) = DATA.shape
@@ -41,7 +41,7 @@ print('TEST/TRAIN length: ',int(m*0.6),' , ',int(m*0.4))
 ##
 #test on sumbission data
 ##
-
+#TEST = pand.read_csv('data_test.csv',sep=',').to_numpy()
 #dataTRAIN = dataCLEAN
 #dataTEST = TEST
 
